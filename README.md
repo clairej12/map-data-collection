@@ -6,25 +6,19 @@ To participate in this study, you'll need to prepare your environment by followi
 
 1. **Install Python**: Ensure you have Python installed on your system (version 3.7 or higher is recommended).
 2. **Set Up the Environment**:
-    - All required packages are listed in the `requirements.txt` file. 
-   - **Option 1 (Must have the same computer as me)**: Use the included Python virtual environment:
-     - Activate it by running:  
-       ```bash
-       source mapdata/bin/activate
-       ```
-   - **Option 2**: Create a new virtual environment using the provided `setup.sh` script:
+   - **Option 1 (Linux)**: Create a new virtual environment using the provided `setup.sh` script:
      - Run the script:  
        ```bash
        chmod +x setup.sh
        ./setup.sh
        ```
-   - **Option 3**: Use your preferred method to set up an environment (e.g., creating a Conda environment). Make sure to install the packages listed in `requirements.txt`. You can install these by using `pip install -r requirements.txt`.
+   - **Option 2**: Use your preferred method to set up an environment (e.g., creating a Conda environment) with the packages listed in `requirements.txt`. You can install these by using `pip install -r requirements.txt`.
 
 ---
 
 ## Task Description
 
-You will take on the role of an agent navigating a marked path on a map. Your objective is to determine your location along this path based on a series of visual cues.
+You will take on the role of an agent navigating a marked path on a map. Your objective is to determine your location along this path based on a series of visual cues. Please do not use any additional external information.
 
 ### Example map
 ![Map](./instructive_images/map.png)
@@ -34,7 +28,7 @@ You will take on the role of an agent navigating a marked path on a map. Your ob
 1. **View the Images**:
    - You will be presented with a map that has start (S) and goal (G) markers, a marked path from S to G, as well as markers 1 through 5.
    - You will also be presented with a series of street-view images that represent your journey along the marked path on the map.
-   - The images progress sequentially from the starting point toward an intermediate point along the route.
+   - From top to bottom, the images progress sequentially from the starting point toward an intermediate point along the route.
    - At intervals, the map will reappear to assist in your localization (so you don't need to scroll back up to see the map).
 
 2. **Analyze Your Location**:
